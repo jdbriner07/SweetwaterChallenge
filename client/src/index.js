@@ -2,15 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 
-import App from './component/app';
+import App from './components/app';
 import store from './reducers';
 
-import itemsList from '../items.json';
-import { addItem } from './actions.itemsChange';
+import itemsList from '../../items.json';
+import { addItem } from './actions/itemsChange';
+import { changeTotal } from './actions/totalChange';
 
 for (var i = 0; i < itemsList.length; i++) {
-    store.dispatch(addItem(itemsList(i)));
-    // increase the total by quantity*price
+    store.dispatch(addItem(itemsList[i]));
+    store.dispatch(changeTotal('inc', itemsList[i].quantity * itemsList[i].price));
 }
 
 class Root extends React.Component {
