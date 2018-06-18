@@ -13,7 +13,7 @@ class Cart extends React.Component {
         return (
             <div className="cart">
                 {Object.entries(this.props.items).map((item, i) => {
-                    return <CartEntry id={item[0]} item={item[1]} index={i}/>
+                    return <CartEntry id={item[0]} item={item[1]} index={i} />
                 })}
             </div>
         )
