@@ -39,7 +39,6 @@ class CartEntry extends React.Component {
     }
 
     render() {
-        console.log(this.props)
         return (
             <div className="cart-entry" >
                 <div className="cart-entry-index" >{this.props.index+1}.</div>
