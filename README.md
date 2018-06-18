@@ -32,3 +32,8 @@ We'd like you to build a Shopping Cart application using [React](https://reactjs
 
 - +10 points for making the data changes persistent. No... we're not going to give you any hints about how we want to see that done.
 - +10 points if you include the functionality to remove items from the cart.
+
+## To Run
+
+- from the project directory on the command line, run npm install and then run webpack.
+- then open the index.html in client/dist in the browser
